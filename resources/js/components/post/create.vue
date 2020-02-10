@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <form @submit.prevent="onSubmid">
+                <form @submit.prevent="onSubmit">
                     <alert-success :form="form">created successfully</alert-success>
                     <div class="form-group">
-                        <label for="title">Email address</label>
+                        <label for="title">Title</label>
                         <input type="text" v-model="form.title" name="title" class="form-control" id="title"
                                aria-describedby="title"
                                placeholder="Enter your title">
@@ -43,7 +43,7 @@
         },
         methods: {
             //on submit
-            onSubmid() {
+            onSubmit() {
                 this.form.post('/api/post').then(() => {
 
                 }).catch(() => {
