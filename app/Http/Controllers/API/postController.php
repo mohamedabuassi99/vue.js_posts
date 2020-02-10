@@ -114,7 +114,6 @@ class postController extends Controller
     public function destroy($id)
     {
         $post = post::find($id);
-
         if (empty($post)) {
             return response()->json(['status' => 'error', 'message' => 'the post is not found'], 404);
         } elseif ($post->delete()) {

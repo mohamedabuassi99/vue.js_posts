@@ -3,12 +3,12 @@ import Vue from 'vue'
 
 
 //components
-import test from './components/test'
 import create from './components/post/create'
+import index from './components/post/index'
 
 const routes = [
-    {path: '/test', component: test},
-    {path: '/post/create', component: create}
+    {path: '/post/create', component: create},
+    {path: '/', component: index}
 ]
 Vue.use(vueRoute);
 
