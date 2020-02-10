@@ -119,10 +119,8 @@ class postController extends Controller
             return response()->json(['status' => 'error', 'message' => 'the post is not found'], 404);
         } elseif ($post->delete()) {
             return response()->json(['status' => 'success', 'data' => $post], 200);
-
         } else {
             return response()->json(['status' => 'error'], 500);
-
         }
     }
 }

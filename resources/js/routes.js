@@ -1,9 +1,14 @@
 import vueRoute from 'vue-router'
+import Vue from 'vue'
+
+
+//components
 import test from './components/test'
- import Vue from 'vue'
+import create from './components/post/create'
 
 const routes = [
-    {path: '/test', component: test}
+    {path: '/test', component: test},
+    {path: '/post/create', component: create}
 ]
 Vue.use(vueRoute);
 

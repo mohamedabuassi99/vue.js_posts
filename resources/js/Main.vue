@@ -1,14 +1,19 @@
 <template>
 <div>
-    main
-    <router-link to="test">test</router-link>
+    <navBar></navBar>
+
     <router-view></router-view>
 </div>
 </template>
 
 <script>
+    import navBar from './components/navbar'
     export default {
-        name: "Main"
+        name: "Main",
+        components:{
+            navBar
+        }
+
     }
 </script>
 
