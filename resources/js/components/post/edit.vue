@@ -34,6 +34,7 @@
 
             onSubmit() {
                 this.form.put('/api/post/' + this.id)
+                
             },
 
             loadPost() {

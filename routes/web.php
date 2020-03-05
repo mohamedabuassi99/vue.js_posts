@@ -10,7 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('mail/send',['as'=>'mail.send','uses'=>'MailController@send']);
+
 
 Route::get('{any}', function () {
     return view('welcome');
 })->where(['any'=>'.*']);
+
+
